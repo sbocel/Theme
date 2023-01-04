@@ -1602,15 +1602,15 @@ class OsticketConfig extends Config {
     function getBackdrop_sysId($site) {
         return $this->get("{$site}_backdrop_sys_id", false);
     }
-    //no lo uso aun
-    function getStaffLoginBackdrop_sys() {
-        $id = $this->getBackdrop_sysId();
+    //changes 04/01/2023 returns the id that was set
+    function getLoginBackdrop_sys($site) {
+        $id = $this->getBackdrop_sysId($site);
         return ($id) ? AttachmentFile::lookup((int) $id) : null;
     }
     function getStaffBackdrop_landingId() {
         return $this->get("staff_backdrop_landing_id", false);
     }
-    //no lo uso aun
+    //changes 04/01/2023 returns the id that was set
     function getStaffLoginBackdrop_landing() {
         $id = $this->getStaffBackdrop_landingId();
         return ($id) ? AttachmentFile::lookup((int) $id) : null;

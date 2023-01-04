@@ -324,10 +324,11 @@ $pages = Page::getPages();
                                             echo 'checked="checked"'; ?>/>
                             </td>
                             <td>
-                                <input type="color" value="#EEEEEE" class="form-control form-control-color"
-                                             valign="middle" style="box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
-                                            margin: 0.5em; height: 6em; width: 8em;
-                                            vertical-align: middle" disabled/>
+                            <img src="<?php echo ROOT_PATH; ?>scp/images/EEEEEE.png"
+                                     alt="Default Backdrop" valign="middle"
+                                     style="box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+                                            margin: 0.5em; height: 6em;
+                                            vertical-align: middle"/>
                             </td>
                         </tr>
                         <tr>

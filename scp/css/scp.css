@@ -6,7 +6,8 @@ body {
           font-smoothing:antialiased;
 }
 body, html {
-    background:#eee;
+    /* background:#eee; */
+    background-image: url(../panel.php?backdrop_sys);
     color:#000;
     font-size:14px;
     margin:0;
