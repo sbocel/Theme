@@ -314,13 +314,13 @@ $pages = Page::getPages();
                             <td>
                                 <input type="radio" name="selected-backdrop_sys" value="0"
                                        style="margin-left: 1em"
-                                       <?php if (!$ost->getConfig()->getClientLogoId())
+                                       <?php if (!$ost->getConfig()->getBackdrop_sysId('admin'))
                                             echo 'checked="checked"'; ?>/>
                             </td>
                             <td>
                                 <input type="radio" name="selected-backdrop_sys_agent" value="0"
                                        style="margin-left: 1em"
-                                       <?php if (!$ost->getConfig()->getStaffLogoId())
+                                       <?php if (!$ost->getConfig()->getBackdrop_sysId('agent'))
                                             echo 'checked="checked"'; ?>/>
                             </td>
                             <td>
