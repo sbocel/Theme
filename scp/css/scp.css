@@ -1086,22 +1086,13 @@ a {
 }
 
 #footer {
+    color:#464A4E;
     clear:both;
     padding:10px;
     text-align:center;
     font-size:0.9em;
 }
 
-@media (prefers-color-scheme: dark) {
-    #footer {
-        color: #eee;
-    }
-}
-@media (prefers-color-scheme: light) {
-    #footer {
-        color: #000;
-    }
-}
 
 table.dashboard-stats {
     text-align:right;
