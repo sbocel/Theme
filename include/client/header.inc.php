@@ -327,6 +327,19 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+/*Cambios */
+.wave{
+    /* background: #eee; */
+    content: url(../Theme/scp/landing.php?backdrop_landing);
+    display:block;max-width:100%;height:auto;
+}
+
+@media screen and (min-width: 950px) {
+  .wave {
+    height: 400px;
+    width: 1140px;
+  }
+}
 
 @media screen and (min-width: 950px) {
   .nav-list {

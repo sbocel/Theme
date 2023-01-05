@@ -1,6 +1,6 @@
 <?php
 /*********************************************************************
-    panel.php
+    landing.php
 **********************************************************************/
 
 // Don't update the session for inline image fetches
@@ -9,20 +9,14 @@ session_set_save_handler('noop','noop','noop','noop','noop','noop');
 define('DISABLE_SESSION', true);
 
 require_once('../main.inc.php');
-//require(INCLUDE_DIR . 'class.nav.php');
 
-//$thisstaff = StaffAuthenticationBackend::getUser();
-//$nav = new StaffNav($thisstaff);
-//$nav = new AdminNav($thisstaff);
 $ttl = 86400; // max-age
-if(isset($_GET['backdrop_sys'])) {
-    //$site = $nav->isAdminPanel()?'admin':'agent';
-    $site = 'admin';
-    if($backdrop_sys = $ost->getConfig()->getLoginBackdrop_sys($site)) {
+if(isset($_GET['backdrop_landing'])) {
+    if($backdrop_sys = $ost->getConfig()->getLoginBackdrop_landing()) {
         $backdrop_sys->display(false,$ttl);
     }
     header("Cache-Control: private, max-age=$ttl");
     header('Pragma: private');
-    Http::redirect('images/EEEEEE.png');
+    Http::redirect('images/wave.png');
 }
 ?>

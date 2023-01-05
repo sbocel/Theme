@@ -305,7 +305,7 @@ $pages = Page::getPages();
                     <thead>
                         <tr>
                             <th>Admin</th>
-                            <th>Agent</th>
+                            <!-- <th>Agent</th> -->
                             <th>Backdrop</th>
                         </tr>
                     </thead>
@@ -317,12 +317,12 @@ $pages = Page::getPages();
                                        <?php if (!$ost->getConfig()->getBackdrop_sysId('admin'))
                                             echo 'checked="checked"'; ?>/>
                             </td>
-                            <td>
+                            <!-- <td>
                                 <input type="radio" name="selected-backdrop_sys_agent" value="0"
                                        style="margin-left: 1em"
                                        <?php if (!$ost->getConfig()->getBackdrop_sysId('agent'))
                                             echo 'checked="checked"'; ?>/>
-                            </td>
+                            </td> -->
                             <td>
                             <img src="<?php echo ROOT_PATH; ?>scp/images/EEEEEE.png"
                                      alt="Default Backdrop" valign="middle"
@@ -332,14 +332,14 @@ $pages = Page::getPages();
                             </td>
                         </tr>
                         <tr>
-                            <th colspan="3">
+                            <th colspan="2">
                                 <em><?php echo __('Use a custom backdrop');
                                 ?>&nbsp;<i class="help-tip icon-question-sign" href="#upload_a_new_backdrop"></i></em>
                             </th>
                         </tr>
                         <?php
                         $current = $ost->getConfig()->getBackdrop_sysId('admin');
-                        $currentScp = $ost->getConfig()->getBackdrop_sysId('agent');
+                        //$currentScp = $ost->getConfig()->getBackdrop_sysId('agent');
                         foreach (AttachmentFile::allBackdrops_sys() as $logo) { ?>
                         <tr>
                             <td>
@@ -349,13 +349,13 @@ $pages = Page::getPages();
                             if ($logo->getId() == $current)
                                 echo 'checked="checked"'; ?>/>
                             </td>
-                            <td>
+                            <!-- <td>
                                 <input type="radio" name="selected-backdrop_sys_agent"
                                        style="margin-left: 1em" value="<?php
                             echo $logo->getId(); ?>" <?php
                             if ($logo->getId() == $currentScp)
                                 echo 'checked="checked"'; ?>/>
-                            </td>
+                            </td> -->
                             <td>
                                 <img src="<?php echo $logo->getDownloadUrl(); ?>"
                                      alt="Custom Backdrop" valign="middle"
@@ -407,11 +407,11 @@ $pages = Page::getPages();
                             <td>
                                 <input type="radio" name="selected-backdrop_landing" value="0"
                                        style="margin-left: 1em"
-                                       <?php if (!$ost->getConfig()->getStaffLogoId())
+                                       <?php if (!$ost->getConfig()->getStaffBackdrop_landingId())
                                             echo 'checked="checked"'; ?>/>
                             </td>
                             <td>
-                                <img src="<?php echo ROOT_PATH; ?>scp/images/login-headquarters.jpg"
+                                <img src="<?php echo ROOT_PATH; ?>scp/images/wave.png"
                                      alt="Default Backdrop" valign="middle"
                                      style="box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
                                             margin: 0.5em; height: 6em;

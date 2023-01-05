@@ -1611,7 +1611,7 @@ class OsticketConfig extends Config {
         return $this->get("staff_backdrop_landing_id", false);
     }
     //changes 04/01/2023 returns the id that was set
-    function getStaffLoginBackdrop_landing() {
+    function getLoginBackdrop_landing() {
         $id = $this->getStaffBackdrop_landingId();
         return ($id) ? AttachmentFile::lookup((int) $id) : null;
     }

@@ -6,7 +6,6 @@ body {
           font-smoothing:antialiased;
 }
 body, html {
-    /* background:#eee; */
     background-image: url(../panel.php?backdrop_sys);
     color:#000;
     font-size:14px;
@@ -1092,6 +1091,18 @@ a {
     text-align:center;
     font-size:0.9em;
 }
+
+@media (prefers-color-scheme: dark) {
+    #footer {
+        color: #eee;
+    }
+}
+@media (prefers-color-scheme: light) {
+    #footer {
+        color: #000;
+    }
+}
+
 table.dashboard-stats {
     text-align:right;
     border-bottom: 2px solid #ddd;
