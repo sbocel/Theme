@@ -91,3 +91,5 @@ por este nuevo código, en donde en $secretKey colocaremos la KEY SECRET que nos
 - MDIFICAR FIRMA EN FOOTER
 1. Debemos encontrar la ubicación del archivo footer.inc.php, se encuentra dentro de la carpeta include/client.
 2. Dentro de <div id=”footer”> modificaremos los cambios que queremos agregar a nuestra firma.
+
+## Manual Logos del sistema y landingpage
