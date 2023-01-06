@@ -86,9 +86,8 @@ Posteriormente nos dirigiremos a la dirección *\upload\open.php* y reemplazarem
 
 por este nuevo código, en donde en $secretKey colocaremos la KEY SECRET que nos da el recaptcha de google.
 
-
-
- 
-
 ## Manual ThemedOst
- 
+ Las modificaciones se harán utilizando un editor de código fuente, en este caso Visual Studio Code.
+- MDIFICAR FIRMA EN FOOTER
+1. Debemos encontrar la ubicación del archivo footer.inc.php, se encuentra dentro de la carpeta include/client.
+2. Dentro de <div id=”footer”> modificaremos los cambios que queremos agregar a nuestra firma.
