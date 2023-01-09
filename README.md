@@ -92,4 +92,19 @@ por este nuevo código, en donde en $secretKey colocaremos la KEY SECRET que nos
 1. Debemos encontrar la ubicación del archivo footer.inc.php, se encuentra dentro de la carpeta include/client.
 2. Dentro de <div id=”footer”> modificaremos los cambios que queremos agregar a nuestra firma.
 
+- Modificación de ubicación Navbar
+
+<h3 align="center"> Animaciones </h3>
+
+- Botones
+Básicamente modificamos algunas propiedades de un botón ya existente:
+1. El border-radius le da forma de pill al botón, y el hover modifica la propiedad al pasar el cursor sobre este.
+2. Las propiedades de css las encontramos en /assets/css/theme.css y lo que colocaremos al botón según su clase será lo siguiente:
+<h3 align="center"> Subir cambios a FileZilla </h3>
+1. Creamos la conexión con los datos brindados:
+2. De lado izquierdo colocaremos la carpeta que contiene el proyecto en local.
+3. De lado derecho la carpeta del servidor.
+4. En el lado local buscaremos los archivos modificados, por cada archivo debemos buscar la ruta de lado derecho también, con la finalidad de overwrite cada archivo.
+5. Para sobre escribir cada archivo debemos darle click en el lado de local y aceptar el mensaje de overwrite.
+
 ## Manual Logos del sistema y landingpage
