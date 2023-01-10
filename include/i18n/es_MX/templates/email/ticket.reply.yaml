@@ -1,0 +1,22 @@
+---
+notes: |
+  Enviado a los usuarios cuando los miembros del personal responden tu Ticket.
+  Las respuestas son generadas solamente por los miembros del equipo.
+subject: |
+  Re: %{ticket.subject} [#%{ticket.number}]
+body: |
+  <h3><strong>Dear %{recipient.name.first},</strong></h3>
+  %{response}
+  <br>
+  <br>
+  <div style="color: rgb(127, 127, 127);">
+  Your %{company.name} Team,<br>
+  %{signature}
+  </div>
+  <hr>
+  <div style = "color: rgb (127, 127, 127); tamaño de fuente: pequeño; text-align: center;"
+   > <em> Esperamos que esta respuesta haya respondido suficientemente a sus preguntas. Si
+   No, por favor no envíe otro correo electrónico. En su lugar, responde a este correo electrónico o
+   <a href = "% {recipient.ticket_link}" style = "color: rgb (84, 141, 212);" > iniciar sesión
+   a su cuenta </a> para un archivo completo de todas sus solicitudes de soporte
+   y respuestas. </em> </div>

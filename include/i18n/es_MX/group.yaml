@@ -1,0 +1,34 @@
+---
+- 
+  id: 1
+  role_id: 1
+  flags: 1
+  name: Domadores de Leones
+  notes: |
+    Administradores. Estas personas (inicialmente) tienen el control total de todos los departamentos a los que tienen acceso.
+  depts:
+    - 1
+    - 2
+    - 3
+- 
+  id: 2
+  role_id: 2
+  flags: 1
+  name: Paseadores de Elefantes
+  notes: |
+    Habitantes de la torre de marfil
+  depts:
+    - 1
+    - 2
+    - 3
+- 
+  id: 3
+  role_id: 2
+  flags: 1
+  name: Entrenadores de pulgas
+  notes: |
+    Miembros del personal
+  depts:
+    - 1
+    - 2
+    - 3

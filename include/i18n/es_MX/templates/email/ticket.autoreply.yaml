@@ -1,0 +1,28 @@
+---
+notes: |
+  Se envía a un usuario cuando se registra una respuesta automática a un Ticket cuando es creado.  Variables disponibles para su reemplazo: % {ticket.*}, %{response}
+subject: |
+  Re: %{ticket.subject} [#%{ticket.number}]
+body: |
+  <h3><strong>Dear %{recipient.name.first},</strong></h3>
+  Se ha creado una solicitud de soporte y se ha asignado un ticket <aet <a
+  href="%{recipient.ticket_link}">#%{ticket.number}</a> con lo siguiente
+  respuesta automátic
+  <br>
+  <br>
+  Topic: <strong>%{ticket.topic.name}</strong>
+  <br>
+  Subject: <strong>%{ticket.subject}</strong>
+  <br>
+  <br>
+  %{response}
+  <br>
+  <br>
+  <div style="color: rgb(127, 127, 127);">Your %{company.name} Team,<br>
+  %{signature}</div>
+  <hr>
+  <div style="color: rgb(127, 127, 127); font-size: small;"><em>Esperamos
+   Esta respuesta ha respondido suficientemente a sus preguntas. Si quieres
+   proporcionar comentarios adicionales o información, por favor responda a este correo electrónico
+  or <a href="%{recipient.ticket_link}"><span
+  style="color: rgb(84, 141, 212);" >Ingrese a su cuenta</span></a> para un archivo completo de nuestras solicitudes de soporte.</em></div>

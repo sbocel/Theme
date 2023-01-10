@@ -1,0 +1,20 @@
+---
+- 
+  isactive: 1
+  execorder: 99
+  match_all_rules: 0
+  email_id: 0
+  target: Email
+  name: SYSTEM BAN LIST
+  notes: |
+    Lista interna de emails bloqueados. No eliminar
+  rules:
+    - 
+      isactive: 1
+      what: email
+      how: equal
+      val: Test@example.com
+  actions:
+    - 
+      sort: 1
+      type: rechazar

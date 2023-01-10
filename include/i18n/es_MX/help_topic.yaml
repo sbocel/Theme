@@ -1,0 +1,43 @@
+---
+- 
+  topic_id: 1
+  flags: 0x02
+  ispublic: 1
+  priority_id: 2
+  forms:
+    - 2
+  topic: Consulta general
+  notes: |
+    Preguntas sobre los productos o servicios
+- 
+  topic_id: 2
+  flags: 0x02
+  ispublic: 1
+  priority_id: 1
+  forms:
+    - 2
+  topic: Comentarios
+  notes: |
+    Tickets que se refieren principalmente a los departamentos de ventas y facturación
+- 
+  topic_id: 10
+  flags: 0x02
+  ispublic: 1
+  dept_id: 3
+  priority_id: 2
+  forms:
+    - 2
+  topic: Informar de un problema
+  notes: |
+    Temas relacionados con productos, servicios o equipos
+- 
+  topic_pid: 10
+  flags: 0x02
+  ispublic: 1
+  sla_id: 1
+  priority_id: 3
+  forms:
+    - 2
+  topic: Problema de acceso
+  notes: |
+    Reportar la imposibilidad de acceso físico o virtual

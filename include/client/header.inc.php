@@ -330,7 +330,7 @@ nav ul li ul li a {
 /*Cambios */
 .wave{
     /* background: #eee; */
-    content: url(../Theme/scp/landing.php?backdrop_landing);
+    content: url(./scp/landing.php?backdrop_landing);
     display:block;max-width:100%;height:auto;
 }
 

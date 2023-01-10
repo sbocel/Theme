@@ -1,0 +1,24 @@
+---
+notes: |
+  Enviado a los miembros del personal cuando un Ticket sea marcado como demorado en el sistema. 
+  La demora en los Tickets está basada en la fecha límite del Ticket como también en el ANS definida para el Ticket.
+subject: |
+  Alerta de Ticket demorado
+body: |
+  <h3><strong>Hola %{recipient.name}</strong>,</h3>
+  el ticket <a href="%{ticket.staff_link}">#%{ticket.number}</a> tiene un retraso serio.
+  <br>
+  <br>
+  Deberíamos trabajar todos duro para garantizar que todos los tickets están siendo dirigidos de forma puntual.
+  <br>
+  <br>
+  Firmado,<br>
+  %{ticket.dept.manager.name}
+  <hr>
+  <div>Para ver o responder el ticket, por favor, haga <a
+  href="%{ticket.staff_link}"><span style="color: rgb(84, 141, 212);"
+  >login</span></a> al sistema de soporte. Estás recibiendo este aviso porque el ticket está asignado directamente a ti o a un equipo o departamento del que eres miembro.</div>
+  <em style="font-size: small">Tu <span style="font-size: smaller"
+  >(although with limited patience)</span> sistema de soporte al cliente</em><br>
+  <img src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc" height="19"
+  alt="Powered by osTicket" width="126" style="width: 126px;">
