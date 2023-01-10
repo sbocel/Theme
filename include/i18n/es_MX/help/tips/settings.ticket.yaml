@@ -60,7 +60,7 @@ auto_refer:
         Esto es necesario cuando desea dar a los agentes con acceso limitado
         acceso continuo a los boletos asignados después de que estén cerrados.
 collaborator_ticket_visibility:
-  title: Collaborator Tickets Visibility
+  title: Visibilidad de tickets de colaboradores
   content: >
     Si está habilitado, los usuarios tendrán visibilidad de TODOS los tickets en los que participarán al iniciar sesión en el portal web. <br> <br> Si está desactivado, los usuarios solo podrán ver sus propias entradas al iniciar sesión en el portal web.
 require_topic_to_close:

@@ -294,7 +294,7 @@ $pages = Page::getPages();
         <tr>
             <th colspan="2">
                 <em><?php echo __('System Default Backdrop'); ?><i
-                class="help-tip icon-question-sign" href="#backdrops"></i></em>
+                class="help-tip icon-question-sign" href="#backdrops_sys"></i></em>
             </th>
         </tr>
     </thead>
@@ -388,7 +388,7 @@ $pages = Page::getPages();
         <tr>
             <th colspan="2">
                 <em><?php echo __('System Default Backdrop'); ?><i
-                class="help-tip icon-question-sign" href="#backdrops"></i></em>
+                class="help-tip icon-question-sign" href="#backdrops_landing"></i></em>
             </th>
         </tr>
     </thead>

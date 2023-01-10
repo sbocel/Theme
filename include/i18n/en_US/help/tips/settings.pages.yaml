@@ -67,6 +67,17 @@ backdrops:
         You may customize the <span class="doc-desc-title">Backdrop</span> that will be
         displayed on the staff login page.
 
+backdrops_sys:
+    title: System background
+    content: >
+        You may customize the <span class="doc-desc-title">System background</span> that will be
+        displayed on the staff login page.
+
+backdrops_landing:
+    title: Backdrop landing page
+    content: >
+        You may customize the <span class="doc-desc-title">Backdrop landing page</span>.        
+
 upload_a_new_backdrop:
     title: Upload a New Backdrop
     content: >
