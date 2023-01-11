@@ -449,7 +449,7 @@ $(function() {
         if ($('#thread-items[data-thread-id]').length)
             options['imageManagerJson'] += '?threadId=' + $('#thread-items').data('threadId');
         getConfig().then(function(c) {
-            if (c.lang && c.lang.toLowerCase() != 'en_us' &&
+            if (c.lang && c.lang.toLowerCase() != 'en_US' &&
                     Redactor.lang[c.short_lang])
                 options['lang'] = c.short_lang;
             if (c.has_rtl)

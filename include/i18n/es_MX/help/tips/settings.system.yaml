@@ -16,16 +16,15 @@ default_department:
   content: >
     Elija un  <span class="doc-desc-title"> Departamento</span>por defecto para los Tickets que no se enrutan automáticamente a un departamento. <br/> <br/> El Ticket puede ser enrutado  sobre el tema de ayuda,correo entrante y ajustes de filtro de Ticket.
 default_schedule:
-    title: Default Schedule
+    title: Horario predeterminado
     content: >
-        Choose the default Schedule to be used by SLA when rendering tickets
-        Overdue.
+        Elija el programa predeterminado que utilizará el SLA al procesar los tickets vencidos.
     links:
-      - title: Manage Schedules
+      - title: Administrar Horarios
         href: /scp/schedules.php
 
 force_https:
-    title: Force HTTPS
+    title: Forzar HTTPS
     content: >
         Esta configuración permite a los administradores configurar si quieren o no forzar HTTPS en todo el sistema. Si está habilitado, cualquier solicitud que utilice el protocolo HTTP se redirigirá al protocolo HTTPS. Tenga en cuenta que esto solo funcionará si tiene un certificado SSL instalado y HTTPS configurado en el servidor.
         <br/><br/>
@@ -64,7 +63,7 @@ collision_avoidance:
   content: >
     Introduzca la duración máxima que un agente tiene permitido para bloquear un Ticket sin ninguna actividad. <br><br>Introduce <span class="doc-desc-opt"> 0</span> para desactivar la función de bloqueo.
 allow_iframes:
-    title: Allow System iFrame
+    title: Permitir iFrame del sistema
     content: >
         Ingrese una lista separada por comas de direcciones URL/dominios para que el sistema se enmarque.
         Si se deja vacío, el sistema se establecerá de forma predeterminada en 'self'. esto acepta
@@ -97,7 +96,7 @@ acl:
         </tbody></table>
 
 embedded_domain_whitelist:
-    title: Embedded Domain Whitelist
+    title: Lista blanca de dominios integrados
     content: >
         Ingrese una lista separada por comas de los dominios que se incluirán en la lista blanca para los iFrames utilizados
         en el sistema. No ingrese <code>http(s)</code> o <code>www</code> con

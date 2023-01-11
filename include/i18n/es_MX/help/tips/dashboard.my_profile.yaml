@@ -11,6 +11,15 @@ username:
     - 
       title: Cambiar un usuario como administrador
       href: /scp/staff.php
+
+config2fa:
+    title: Autenticación de dos factores
+    content: >
+        La autenticación de dos factores agrega una capa adicional de seguridad
+        al iniciar sesión en el servicio de asistencia. Una vez que envíe correctamente
+        su nombre de usuario y contraseña, deberá ingresar un token
+        para terminar de iniciar sesión en el servicio de asistencia.
+
 time_zone:
   title: Zona Horaria
   0: >
