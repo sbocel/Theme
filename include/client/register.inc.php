@@ -14,16 +14,15 @@ if (isset($user) && $user instanceof ClientCreateRequest) {
 $info = Format::htmlchars(($errors && $_POST) ? $_POST : $info);
 
 ?>
-<h1><?php echo __('Account Registration'); ?></h1>
-<p><?php echo __(
+<h1 style="margin-left:20px; margin-top:20px; margin-right:20px;"><?php echo __('Account Registration'); ?></h1>
+<p style="margin-left:20px;margin-right:20px;"><?php echo __(
         'Use the forms below to create or update the information we have on file for your account'
     ); ?>
 </p>
-<form action="account.php" method="post">
+<form action="account.php" method="post" style="margin-left:20px; margin-right:20px; margin-top:20px;">
     <?php csrf_token(); ?>
     <input type="hidden" name="do" value="<?php echo Format::htmlchars($_REQUEST['do']
                                                 ?: ($info['backend'] ? 'import' : 'create')); ?>" />
-    <table style="width:100%; margin:30px auto;">
         <tbody>
             <?php
             $cf = $user_form ?: UserForm::getInstance();
@@ -32,32 +31,32 @@ $info = Format::htmlchars(($errors && $_POST) ? $_POST : $info);
             <tr>
                 <td colspan="2">
                     <div class="form-header">
-                        <h3><?php echo __('Preferences'); ?></h3>
+                        <h3 style="margin-top:20px;"><?php echo __('Preferences'); ?></h3>
                     </div>
                 </td>
             </tr>
             <tr>
-                <td width="180">
+                <td>
                     <?php echo __('Time Zone'); ?>:
                 </td>
-                <td>
+                <td style="margin-left:20px; margin-right:20px;">
                     <?php
                     $TZ_NAME = 'timezone';
                     $TZ_TIMEZONE = $info['timezone'];
                     include INCLUDE_DIR . 'staff/templates/timezone.tmpl.php'; ?>
-                    <div class="error"><?php echo $errors['timezone']; ?></div>
+                    <div style="margin-left:20px; margin-right:20px;" class="error"><?php echo $errors['timezone']; ?></div>
                 </td>
             </tr>
             <tr>
                 <td colspan=2">
                 <div class="form-header">
-                        <h3><?php echo __('Access Credentials'); ?></h3>
+                        <h3 style="margin-top:20px;"><?php echo __('Access Credentials'); ?></h3>
                     </div>
                 </td>
             </tr>
             <?php if ($info['backend']) { ?>
                 <tr>
-                    <td width="180">
+                    <td>
                         <?php echo __('Login With'); ?>:
                     </td>
                     <td>
@@ -73,7 +72,7 @@ $info = Format::htmlchars(($errors && $_POST) ? $_POST : $info);
                 </tr>
             <?php } else { ?>
                 <tr>
-                    <td width="180">
+                    <td>
                         <?php echo __('Create a Password'); ?>:
                     </td>
                     <td>
@@ -82,7 +81,7 @@ $info = Format::htmlchars(($errors && $_POST) ? $_POST : $info);
                     </td>
                 </tr>
                 <tr>
-                    <td width="180">
+                    <td>
                         <?php echo __('Confirm New Password'); ?>:
                     </td>
                     <td>
@@ -92,13 +91,12 @@ $info = Format::htmlchars(($errors && $_POST) ? $_POST : $info);
                 </tr>
             <?php } ?>
         </tbody>
-    </table>
-
-    <p style="display:flex; gap:20px;">
-        <input class="button" type="submit" value="<?php echo __('Register'); ?>" />
+    
+    <div class="viewbtn-create">
+        <input class="button blue2" type="submit" value="<?php echo __('Register'); ?>" />
         <input class="button red" type="button" value="<?php echo __('Cancel'); ?>" onclick="javascript:
         window.location.href='index.php';" />
-    </p>
+    </div>
 </form>
 <?php if (!isset($info['timezone'])) { ?>
     <!-- Auto detect client's timezone where possible -->

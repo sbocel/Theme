@@ -3,7 +3,7 @@ notes: |
   La página de agradecimiento se muestra al cliente cuando un usuario crea un nuevo Ticket a través del portal del cliente.
 name: Gracias
 body: |
-  <div>%{ticket.name}, 
+  <div style="padding: 15px;">%{ticket.name}, 
   <br>
   <br>
   Gracias por ponerse en contacto con nosotros.

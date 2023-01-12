@@ -33,9 +33,9 @@ if ($info['topicId'] && ($topic = Topic::lookup($info['topicId']))) {
 }
 
 ?>
-<h1><?php echo __('Open a New Ticket'); ?></h1>
-<p><?php echo __('Please fill in the form below to open a new ticket.'); ?></p>
-<form id="ticketForm" method="post" action="open.php" enctype="multipart/form-data">
+<h1 style="padding-left: 20px; margin-top:20px;"><?php echo __('Open a New Ticket'); ?></h1>
+<p style="padding-left: 20px;"><?php echo __('Please fill in the form below to open a new ticket.'); ?></p>
+<form style="padding: 20px; padding-buttom:50px;"id="ticketForm" method="post" action="open.php" enctype="multipart/form-data">
     <?php csrf_token(); ?>
     <input type="hidden" name="a" value="open">
     <table id="newTicketTable" width="100%" cellpadding="1" cellspacing="0" border="0">
@@ -132,8 +132,8 @@ if ($info['topicId'] && ($topic = Topic::lookup($info['topicId']))) {
             </tr>
         </tbody>
     </table>
-    <p style="display:flex; gap:20px;">
-        <input class="button" type="submit" value="<?php echo __('Create Ticket'); ?>">
+    <div class="viewbtn">
+        <input class="button blue2" type="submit" value="<?php echo __('Create Ticket'); ?>">
         <input class="button yellow" type="reset" name="reset" value="<?php echo __('Reset'); ?>">
         <input class="button red" type="button" name="cancel" value="<?php echo __('Cancel'); ?>" onclick="javascript:
             $('.richtext').each(function() {
@@ -142,5 +142,5 @@ if ($info['topicId'] && ($topic = Topic::lookup($info['topicId']))) {
                     redactor.plugin.draft.deleteDraft();
             });
             window.location.href='index.php';">
-    </p>
+    </div>
 </form>

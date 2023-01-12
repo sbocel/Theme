@@ -40,7 +40,7 @@
       width: 85
       heading: Prioridad
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -99,7 +99,7 @@
       width: 85
       heading: Prioridad
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -145,7 +145,7 @@
       width: 85
       heading: Prioridad
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -191,7 +191,7 @@
       width: 85
       heading: Prioridad
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -257,7 +257,7 @@
       sort_id: 7
 - 
   id: 6
-  title: Assigned to Me
+  title: Asignado a mí
   parent_id: 5
   flags: 43
   root: T
@@ -372,7 +372,7 @@
     - 
       sort_id: 7
 - 
-  id: 0
+  id: 8
   parent_id: 0
   title: Cerrado
   flags: 0x03
@@ -406,7 +406,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -429,7 +429,7 @@
 - 
   id: 9
   parent_id: 0
-  title: Today
+  title: Hoy
   flags: 43
   sort: 1
   root: T
@@ -461,7 +461,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -484,7 +484,7 @@
 - 
   id: 10
   parent_id: 0
-  title: Yesterday
+  title: Ayer
   flags: 43
   sort: 2
   root: T
@@ -516,7 +516,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -539,7 +539,7 @@
 - 
   id: 11
   parent_id: 0
-  title: This Week
+  title: Esta semana
   flags: 43
   sort: 3
   root: T
@@ -571,7 +571,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -594,7 +594,7 @@
 - 
   id: 12
   parent_id: 0
-  title: This Month
+  title: Este mes
   flags: 43
   sort: 4
   root: T
@@ -626,7 +626,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -649,7 +649,7 @@
 - 
   id: 13
   parent_id: 0
-  title: This Quarter
+  title: Este cuatrimestre
   flags: 43
   sort: 5
   root: T
@@ -681,7 +681,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160
@@ -704,7 +704,7 @@
 - 
   id: 14
   parent_id: 0
-  title: This Year
+  title: Este año
   flags: 43
   sort: 6
   root: T
@@ -736,7 +736,7 @@
       width: 185
       heading: De
     - 
-      column_id: 0
+      column_id: 8
       bits: 1
       sort: 6
       width: 160

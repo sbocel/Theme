@@ -16,9 +16,9 @@ if ($content) {
 }
 
 ?>
-<h1><?php echo Format::display($title); ?></h1>
-<p><?php echo Format::display($body); ?></p>
-<form action="login.php" method="post" id="clientLogin">
+<h1 style="margin-top: 20px; margin-left:20px; margin-right:20px;"><?php echo Format::display($title); ?></h1>
+<p style="margin-left: 20px; margin-right: 20px;"><?php echo Format::display($body); ?></p>
+<form style="margin-left: 20px; margin-right: 20px;" action="login.php" method="post" id="clientLogin">
     <?php csrf_token(); ?>
     <div class="login-cover">
         <div class="login-box">
@@ -32,13 +32,13 @@ if ($content) {
                 <input id="passwd" placeholder="<?php echo __('Password'); ?>" type="password" name="lpasswd" size="30" value="<?php echo $passwd; ?>" class="nowarn"></td>
             </div>
             <p>
-                <input class="btn button primary" type="submit" value="<?php echo __('Sign In'); ?>">
+                <input class="button mail" type="submit" value="<?php echo __('Sign In'); ?>">
                 <?php if ($suggest_pwreset) { ?>
                     <a style="padding-top:4px;display:inline-block;" href="pwreset.php"><?php echo __('Forgot My Password'); ?></a>
                 <?php } ?>
             </p>
         </div>
-        <div class="login-meta">
+        <div class="login-meta" style="margin-bottom:20px; text-align:center;">
             <?php
 
             $ext_bks = array();
@@ -59,7 +59,7 @@ if ($content) {
             <?php } ?>
             <div>
                 <b><?php echo __("I'm an agent"); ?></b> —
-                <a href="<?php echo ROOT_PATH; ?>scp/"><?php echo __('Sign in here'); ?></a>
+                <a href="<?php echo ROOT_PATH; ?>scp/"><?php echo __('Sign In'); ?></a>
             </div>
         </div>
     </div>

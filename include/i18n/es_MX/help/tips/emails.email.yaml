@@ -24,6 +24,16 @@ auto_response:
   content: >
     Puede desactivar la respuesta automática enviada al usuario cuando se crea un nuevo Ticket mediante esta dirección de correo electrónico.
 
+userid:
+    title: Nombre de usuario
+    content: >
+        El nombre de usuario se utiliza en el proceso de autenticación de correo electrónico. Aceptamos
+        cadenas de dirección única, cadenas de buzón compartido, nombre de servidor + nombre de usuario
+        cuerdas, y una combinación de todos.
+    links:
+      - title: Más Información
+        href: https://docs.osticket.com/en/latest/Admin/Emails/Emails.html
+
 username:
   title: Nombre de usuario
   0: >
@@ -58,6 +68,13 @@ protocol:
   title: Protocolo de casilla de correo
   content: >
     Seleccione el protocolo de correos soportado por su servidor de correo remoto. Se recomienda IMAP y SSL si es posible.
+smtp_auth_creds:
+    title: Usar autenticación separada
+    content: >
+        Si esta configuración está deshabilitada, el sistema utilizará la misma autenticación.
+        Credenciales como se ingresó anteriormente. Si necesita credenciales separadas para
+        Recuperación y SMTP, puede Habilitar esta configuración e ingresar su SMTP
+        Credenciales de autenticación.
 fetch_frequency:
   title: Frecuencia de búsqueda
   content: >

@@ -10,7 +10,7 @@
       name: email
       label: Correo Electrónico
       sort: 1
-      flags: 489379
+      flags: 0x777B3
       configuration:
         size: 40
         length: 64
@@ -20,7 +20,7 @@
       name: name
       label: Nombre completo
       sort: 2
-      flags: 489379
+      flags: 0x777B3
       configuration:
         size: 40
         length: 64

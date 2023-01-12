@@ -10,8 +10,8 @@ else
     $button = __("View Ticket");
 ?>
 
-<h1><?php echo __('Check Ticket Status'); ?></h1>
-<p><?php
+<h1 style="padding-left:20px; margin-top:20px;"><?php echo __('Check Ticket Status'); ?></h1>
+<p style="padding-left:20px;"><?php
     echo __('Please provide your email address and a ticket number.');
     if ($cfg->isClientEmailVerificationRequired())
         echo ' ' . __('An access link will be emailed to you.');
@@ -33,14 +33,16 @@ else
                     <input id="ticketno" type="text" name="lticket" placeholder="<?php echo __('e.g. 051243'); ?>" size="30" value="<?php echo $ticketid; ?>" class="nowarn" />
             </div>
             <p>
-                <input class="btn button primary" type="submit" value="<?php echo $button; ?>">
+                <!-- <input class="btn button primary" type="submit" value="<?php echo $button; ?>"> -->
+                <input class="button mail" type="submit" style="white-space: normal;" value="<?php echo $button; ?>">
             </p>
         </div>
-        <div class="instructions">
+        <div style="margin-bottom:20px; text-align:center;" class="instructions">
             <?php if ($cfg && $cfg->getClientRegistrationMode() !== 'disabled') { ?>
                 <?php echo __('Have an account with us?'); ?>
                 <a href="login.php"><?php echo __('Sign In'); ?></a> 
                 <?php if ($cfg->isClientRegistrationEnabled()) { ?>
+                    <br>
             <?php echo sprintf( __('or %s register for an account %s to access all your tickets.'),
                                                                                 '<a href="account.php?do=create">',
                                                                                 '</a>'
