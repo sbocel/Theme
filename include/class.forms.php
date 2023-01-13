@@ -3966,6 +3966,8 @@ class FileUploadField extends FormField {
 
     function getConfiguration() {
         $config = parent::getConfiguration();
+             // If no size present default to 1 MB
+             $config['size'] ??= 1048576;
         $_types = self::getFileTypes();
         $mimetypes = array();
         $extensions = array();
