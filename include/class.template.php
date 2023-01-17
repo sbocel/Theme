@@ -21,11 +21,12 @@ class EmailTemplateGroup {
     var $id;
     var $ht;
     var $_templates;
+    // Cambios 16-01-2023 traduccion
     static $all_groups = array(
         'sys' => /* @trans */ 'System Management Templates',
-        'a.ticket.user' => /* @trans */ 'Ticket End-User Email Templates',
-        'b.ticket.staff' => /* @trans */ 'Ticket Agent Email Templates',
-        'c.task' => /* @trans */ 'Task Email Templates',
+        'a.ticket.user' => /* @trans */ 'Plantillas de correo electrónico de usuario final de ticket',
+        'b.ticket.staff' => /* @trans */ 'Plantillas de correo electrónico para agentes de venta de entradas',
+        'c.task' => /* @trans */ 'Plantillas de correo electrónico de tareas',
     );
     static $all_names=array(
         'ticket.autoresp'=>array(

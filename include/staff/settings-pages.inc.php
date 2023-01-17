@@ -21,9 +21,9 @@ $pages = Page::getPages();
     <li><a href="#backdrops"><i class="icon-picture"></i>
         <?php echo __('Login Backdrop'); ?></a></li>
     <li> <a href="#backdrops_sys"><i class="icon-picture"></i>
-    <?php echo __('Fondo del Sistema'); ?></a></li>
+    <?php echo __('System Backdrop'); ?></a></li>
     <li> <a href="#backdrops_landings"><i class="icon-picture"></i>
-    <?php echo __('Fondo de Landingpage') ?></a><li>
+    <?php echo __('Landing-Page Background') ?></a><li>
 </ul>
 
 <div class="tab_content" id="basic-information">

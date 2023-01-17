@@ -11,3 +11,13 @@ transient:
   title: Transitorio
   content: >
     Los SLAs Transitorios son considerados temporales y pueden ser reemplazados por un SLA no transitorio ante una transferencia de <span class="doc-desc-opt">Departamento</span> o cuando su <span class="doc-desc-title">Tema de Ayuda</span> es modificado.
+schedule:
+    title: Calendario
+    content: >
+        Elija el programa que utilizará este SLA al generar tickets
+        Atrasados.
+        <br><br>
+        Tenga en cuenta que la configuración del departamento puede anular este horario.
+    links:
+      - title: Administrar Horarios
+        href: /scp/schedules.php
