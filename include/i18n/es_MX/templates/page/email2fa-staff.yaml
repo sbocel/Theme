@@ -1,6 +1,0 @@
----
-notes: > 
-  Esta plantilla define el correo electrónico enviado al personal que usa el correo electrónico para la autenticación de dos factores.
-name: "osTicket Autenticación de dos factores"
-body: >
-  <h3><strong>Hola %{staff.name.first},</strong></h3> <div> Acaba de iniciar sesión en el servicio de asistencia en %{url}.<br /> <br /> Use el código de verificación a continuación para terminar de iniciar sesión en el servicio de asistencia.<br /> <br /> %{otp}<br /> <br /> <em style="font-size: small">Su amigable sistema de atención al cliente</em> <br /> <img src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc" alt="Powered by osTicket" width="126" height="19" style="width: 126px" /> </div>
