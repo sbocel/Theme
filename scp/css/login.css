@@ -279,8 +279,8 @@ input.submit:hover, input.submit:active {
 }
 
 #poweredBy .osticket-logo {
-    height: auto;
-    width: 55px;
+    height: 20px;
+    width: 35px;
     vertical-align: baseline;
     border: none;
     -webkit-filter: drop-shadow(0 0 4px black);

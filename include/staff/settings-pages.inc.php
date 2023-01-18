@@ -127,9 +127,9 @@ $pages = Page::getPages();
                 <table style="width:100%">
                     <thead>
                         <tr>
-                            <th>Client</th>
-                            <th>Staff</th>
-                            <th>Logo</th>
+                            <th><?php echo __('Client') ?></th>
+                            <th><?php echo __('Staff') ?></th>
+                            <th><?php echo __('Logo') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -225,8 +225,8 @@ $pages = Page::getPages();
                 <table style="width:100%">
                     <thead>
                         <tr>
-                            <th>Staff</th>
-                            <th>Backdrop</th>
+                            <th><?php echo __('Staff') ?></th>
+                            <th><?php echo __('Backdrop') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -304,9 +304,9 @@ $pages = Page::getPages();
                 <table style="width:100%">
                     <thead>
                         <tr>
-                            <th>Admin</th>
+                            <th><?php echo __('Admin') ?></th>
                             <!-- <th>Agent</th> -->
-                            <th>Backdrop</th>
+                            <th><?php echo __('Backdrop') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -398,8 +398,8 @@ $pages = Page::getPages();
                 <table style="width:100%">
                     <thead>
                         <tr>
-                            <th>Staff</th>
-                            <th>Backdrop</th>
+                            <th><?php echo __('Staff') ?></th>
+                            <th><?php echo __('Backdrop') ?></th>
                         </tr>
                     </thead>
                     <tbody>

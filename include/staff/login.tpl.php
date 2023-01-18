@@ -79,7 +79,7 @@ if (count($ext_bks)) { ?>
     </div>
 </div>
 <div id="poweredBy"><?php echo __('Powered by'); ?>
-    <a href="http://www.osticket.com" target="_blank">
+    <a href="https://bluedevs.com" target="_blank">
         <img alt="osTicket" src="images/osticket-grey.png" class="osticket-logo">
     </a>
 </div>
