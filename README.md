@@ -1,4 +1,4 @@
-# Documentación OsTicket 🦘
+# Documentación OsTicket 🚀
 
 ## Manual de instalación Shagen
  - CAMBIO DE LOGO
