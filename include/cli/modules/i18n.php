@@ -573,7 +573,7 @@ class i18n_Compiler extends Module {
             '"Project-Id-Version: osTicket '.trim(`git describe`).'\n"',
             '"X-Osticket-Major-Version: '.MAJOR_VERSION.'\n"',
             '"POT-Create-Date: '.date('Y-m-d H:i O').'\n"',
-            '"Report-Msgid-Bugs-To: support@osticket.com\n"',
+            '"Report-Msgid-Bugs-To: mcortez@bluedevs.com\n"',
             '"Language: en_US\n"',
             '"MIME-Version: 1.0\n"',
             '"Content-Type: text/plain; charset=UTF-8\n"',
