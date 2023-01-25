@@ -303,7 +303,7 @@ $gmtime = Misc::gmtime();
                 href="#default_schedule"></i>
             </td>
         </tr>
-        <!-- <tr>
+        <tr>
             <th colspan="2">
                 <em><b><?php echo __('System Languages'); ?></b>&nbsp;
                 <i class="help-tip icon-question-sign" href="#languages"></i>
@@ -326,7 +326,7 @@ $gmtime = Misc::gmtime();
                 <i class="help-tip icon-question-sign" href="#primary_language"></i>
             </td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td style="vertical-align:top;padding-top:4px;"><?php echo __('Secondary Languages'); ?>:</td>
             <td><div id="secondary_langs" style="width: 300px"><?php
             foreach ($cfg->getSecondaryLanguages() as $lang) {
@@ -366,8 +366,8 @@ $gmtime = Misc::gmtime();
             </select>
             <span class="error">&nbsp;<?php echo $errors['add_secondary_language']; ?></span>
             <i class="help-tip icon-question-sign" href="#secondary_language"></i>
-        </td></tr> -->
-        <tr>
+        </td></tr>
+        <tr> -->
             <th colspan="2">
                 <em><b><?php echo __('Attachments Storage and Settings');?></b>:<i
                 class="help-tip icon-question-sign" href="#attachments"></i></em>
