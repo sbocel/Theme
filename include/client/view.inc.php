@@ -1,4 +1,5 @@
 <?php
+/*Comentario*/
 if (!defined('OSTCLIENTINC') || !$thisclient || !$ticket || !$ticket->checkUserAccess($thisclient)) die('Access Denied!');
 
 $info = ($_POST && $errors) ? Format::htmlchars($_POST) : array();
@@ -20,7 +21,7 @@ if (
     && $cfg->isClientRegistrationEnabled()
 ) { ?>
 
-    <div id="msg_info">
+        <div id="msg_info">
         <i class="icon-compass icon-2x pull-left"></i>
         <strong><?php echo __('Looking for your other tickets?'); ?></strong><br />
         <a href="<?php echo ROOT_PATH; ?>login.php?e=<?php echo urlencode($thisclient->getEmail()); ?>" style="text-decoration:underline">
@@ -206,14 +207,16 @@ if ((!$ticket->isClosed() || $ticket->isReopenable()) && !$blockReply) { ?>
                 <?php echo __('Ticket will be reopened on message post'); ?>
             </div>
         <?php } ?>
-        <p style="display:flex; gap:20px; margin-top:20px;">
+        <div class="viewbtn">
             <input class="button" type="submit" value="<?php echo __('Post Reply'); ?>">
             <input class="button yellow" type="reset" value="<?php echo __('Reset'); ?>">
             <input class="button red" type="button" value="<?php echo __('Cancel'); ?>" onClick="history.go(-1)">
-        </p>
+        </div>
     </form>
 <?php
 } ?>
+
+
 <script type="text/javascript">
     <?php
     // Hover support for all inline images
