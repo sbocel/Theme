@@ -157,7 +157,7 @@ $tickets->values(
 
 ?>
 <div class="search">
-    <div>
+    <div style="padding: 15px">
         <form action="tickets.php" method="get" id="ticketSearchForm">
             <div style="display:flex; gap:10px;" >                
                 <input type="hidden" name="a" value="search">
@@ -194,7 +194,7 @@ $tickets->values(
 
 </div>
 
-
+<div style="padding: 15px;">
 <h2 style="margin:20px 0; font-size:1.2em;">
     <a href="<?php echo Format::htmlchars($_SERVER['REQUEST_URI']); ?>"><i class="refresh icon-refresh"></i>
         <?php echo __('Tickets'); ?>
@@ -224,6 +224,7 @@ $tickets->values(
         </small>
     </div>
 </h2>
+<div style="display: block; overflow-x: auto; white-space: nowrap;">
 <table id="ticketTable" width="100%" border="0" cellspacing="0" cellpadding="0">
     <caption><?php echo $showing; ?></caption>
     <thead>
@@ -291,6 +292,8 @@ $tickets->values(
         ?>
     </tbody>
 </table>
+    </div>
+    </div>
 <?php
 if ($total) {
     echo '<div>&nbsp;' . __('Page') . ':' . $pageNav->getPageLinks() . '&nbsp;</div>';
