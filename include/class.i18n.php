@@ -114,7 +114,8 @@ class Internationalization {
         $_config = new OsticketConfig();
 
         // Determine reasonable default max_file_size
-        $max_size = Format::filesize2bytes(strtoupper(ini_get('upload_max_filesize')));
+        //$max_size = Format::filesize2bytes(strtoupper(ini_get('upload_max_filesize')));
+        $max_size = Format::filesize2bytes("1m");
         $val = ((int) $max_size/2);
         $po2 = 1;
         while( $po2 < $val ) $po2 <<= 1;
