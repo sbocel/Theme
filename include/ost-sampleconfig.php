@@ -21,7 +21,7 @@ if(!strcasecmp(basename($_SERVER['SCRIPT_NAME']),basename(__FILE__)) || !defined
     die('kwaheri rafiki!');
 
 #Install flag
-define('OSTINSTALLED',TRUE);
+define('OSTINSTALLED',FALSE);
 if(OSTINSTALLED!=TRUE){
     if(!file_exists(ROOT_DIR.'setup/install.php')) die('Error: Contact system admin.'); //Something is really wrong!
     //Invoke the installer.
@@ -30,22 +30,22 @@ if(OSTINSTALLED!=TRUE){
 }
 
 # Encrypt/Decrypt secret key - randomly generated during installation.
-define('SECRET_SALT','XTzWXZWl5Ji9KsFOIPLHBZREjmIYz09l');
+define('SECRET_SALT','%CONFIG-SIRI');
 
 #Default admin email. Used only on db connection issues and related alerts.
-define('ADMIN_EMAIL','santiagobocel10@gmail.com');
+define('ADMIN_EMAIL','%ADMIN-EMAIL');
 
 # Database Options
 # ---------------------------------------------------
 # Mysql Login info
 define('DBTYPE','mysql');
-define('DBHOST','localhost');
-define('DBNAME','instalacionthemedost');
-define('DBUSER','santiago');
-define('DBPASS','admin');
+define('DBHOST','%CONFIG-DBHOST');
+define('DBNAME','%CONFIG-DBNAME');
+define('DBUSER','%CONFIG-DBUSER');
+define('DBPASS','%CONFIG-DBPASS');
 
 # Table prefix
-define('TABLE_PREFIX','ost_');
+define('TABLE_PREFIX','%CONFIG-PREFIX');
 
 #
 # SSL Options
