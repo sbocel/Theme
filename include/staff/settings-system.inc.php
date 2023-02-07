@@ -399,6 +399,10 @@ $gmtime = Misc::gmtime();
                 // Maximum size for agent-uploaded files (via SCP)
                 'Agent Maximum File Size');?>:</td>
             <td>
+                    <!-- <h1><?php
+                    echo php_ini_loaded_file();
+                    echo ini_get('upload_max_filesize')
+                    ?></h1> -->
                 <select name="max_file_size">
                     <option value="262144">&mdash; <?php echo __('Small'); ?> &mdash;</option>
                     <?php $next = 512 << 10;
