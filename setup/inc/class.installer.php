@@ -78,7 +78,7 @@ class Installer extends SetupWizard {
 
         //Check table prefix underscore required at the end!
         if($vars['prefix'] && substr($vars['prefix'], -1)!='_')
-            $this->errors['prefix']=__('Bad prefix. Must have underscore (_) at the end. e.g \'ost_\'');
+            $this->errors['prefix']=__('Bad prefix. Must have underscore (_) at the end. e.g \'bdt_\'');
 
         //Make sure admin username is not very predictable. XXX: feels dirty but necessary
         if(!$this->errors['username'] && in_array(strtolower($vars['username']),array('admin','admins','username','osticket')))
