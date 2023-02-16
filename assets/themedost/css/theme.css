@@ -410,7 +410,9 @@ body {
     color: #00a6fb;
 }
 
-#content {}
+#content {
+    padding: 15px;
+}
 
 #footer {
     display: flex;
