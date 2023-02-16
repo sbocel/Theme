@@ -249,8 +249,8 @@ class Installer extends SetupWizard {
 
         //Create config settings---default settings!
         $defaults = array(
-            'default_email_id'=>$alert_email_id,
-            'alert_email_id'=>$alert_email_id,
+            'default_email_id'=>$support_email_id,
+            'alert_email_id'=>$support_email_id,
             'default_dept_id'=>$dept_id,
             'default_sla_id'=>$sla_id,
             'schedule_id'=>$schedule_id,
