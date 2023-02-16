@@ -232,7 +232,6 @@ class Installer extends SetupWizard {
         list(,$domain) = explode('@', $vars['email']);
         foreach (array(
             "Support" => $email,
-            "osTicket Alerts" => "alerts@$domain",
             '' => "noreply@$domain",
         ) as $name => $mailbox) {
             $mb = Email::create(array(
@@ -243,8 +242,6 @@ class Installer extends SetupWizard {
             $mb->save();
             if ($mailbox == $email)
                 $support_email_id = $mb->email_id;
-            if ($mailbox == "alerts@$domain")
-                $alert_email_id = $mb->email_id;
         }
 
         //Create config settings---default settings!
