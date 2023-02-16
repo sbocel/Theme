@@ -231,7 +231,7 @@ class Installer extends SetupWizard {
         $email = $vars['email'];
         list(,$domain) = explode('@', $vars['email']);
         foreach (array(
-            "Support" => $email,
+            $vars['name'] => $email,
             '' => "noreply@$domain",
         ) as $name => $mailbox) {
             $mb = Email::create(array(
