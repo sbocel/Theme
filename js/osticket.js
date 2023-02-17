@@ -27,7 +27,7 @@ $(document).ready(function(){
             fObj.data('changed', true);
             $('input[type=submit]', fObj).css('color', 'white');
             $(window).bind('beforeunload', function(e) {
-                return __("¿Seguro que quieres irte? Cualquier cambio o información que has introducido se descartarán.?");
+                return __("Are you sure you want to leave? Any changes or info you've entered will be discarded!");
              });
         }
     });
