@@ -138,10 +138,10 @@ var scp_prep = function() {
             fObj.data('changed', true);
             $('input[type=submit], button[type=submit]', fObj).addClass('save pending');
             $(window).bind('beforeunload', function(e) {
-                return __('Are you sure you want to leave? Any changes or info you\'ve entered will be discarded!');
+                return __('Estás seguro que quieres irte? ¡Cualquier cambio o información que haya ingresado será descartado!');
             });
             $(document).on('pjax:beforeSend.changed', function(e) {
-                return confirm(__('Are you sure you want to leave? Any changes or info you\'ve entered will be discarded!'));
+                return confirm(__('Estás seguro que quieres irte? ¡Cualquier cambio o información que haya ingresado será descartado!'));
             });
         }
     };
