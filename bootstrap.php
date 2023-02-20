@@ -1,7 +1,7 @@
 <?php
 
 class Bootstrap {
-  
+  //prueba 2
     static function init() {
         #Disable Globals if enabled....before loading config info
         if(ini_get('register_globals')) {
