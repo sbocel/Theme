@@ -39,7 +39,7 @@ ALTER TABLE `%TABLE_PREFIX%email`
     ADD `mail_protocol` ENUM( 'POP', 'IMAP' ) NOT NULL AFTER `mail_host` ,
     ADD `mail_encryption` ENUM( 'NONE', 'SSL' ) NOT NULL AFTER `mail_protocol` ,
     ADD `mail_port` INT( 6 ) NULL AFTER `mail_encryption` ,
-    ADD `mail_fetchfreq` TINYINT( 3 ) NOT NULL DEFAULT '5' AFTER `mail_port` ,
+    ADD `mail_fetchfreq` TINYINT( 3 ) NOT NULL DEFAULT '1' AFTER `mail_port` ,
     ADD `mail_fetchmax` TINYINT( 4 ) NOT NULL DEFAULT '30' AFTER `mail_fetchfreq` ,
     ADD `mail_delete` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `mail_fetchmax` ,
     ADD `mail_errors` TINYINT( 3 ) NOT NULL DEFAULT '0' AFTER `mail_delete` ,
