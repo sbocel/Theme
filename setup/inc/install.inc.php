@@ -1,6 +1,6 @@
 <?php
 if(!defined('SETUPINC')) die('Kwaheri!');
-$info=($_POST && $errors)?Format::htmlchars($_POST):array('prefix'=>'bdt_','dbhost'=>$_SERVER['HTTP_HOST'],'lang_id'=>'en_US');
+$info=($_POST && $errors)?Format::htmlchars($_POST):array('prefix'=>'bdt_','dbhost'=>$_SERVER['HTTP_HOST'] != 'localhost'?'mysql.'.$_SERVER['HTTP_HOST']:'localhost','lang_id'=>'en_US');
 ?>
 <div id="main" class="step2">
     <h1><?php echo __('osTicket Basic Installation'); ?></h1>
