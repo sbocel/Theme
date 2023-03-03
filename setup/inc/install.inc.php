@@ -2,7 +2,7 @@
 if(!defined('SETUPINC')) die('Kwaheri!');
 $host = $_SERVER['HTTP_HOST'];
 preg_match('/^(.+)\.([^.]+\.[^.]+)$/i', $host, $matches);
-$info=($_POST && $errors)?Format::htmlchars($_POST):array('prefix'=>'bdt_','dbhost'=>$_SERVER['HTTP_HOST'] != 'localhost'?'mysql.'.$matches[1].'.com':'localhost','lang_id'=>'en_US');
+$info=($_POST && $errors)?Format::htmlchars($_POST):array('prefix'=>'bdt_','dbhost'=>$matches[0]?'mysql.'.$matches[0].'.com':'localhost','lang_id'=>'en_US');
 ?>
 <div id="main" class="step2">
     <h1><?php echo __('osTicket Basic Installation'); ?></h1>
