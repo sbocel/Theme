@@ -1008,10 +1008,11 @@ class MailFetcher {
         $MAXERRORS = 5; //Max errors before we start delayed fetch attempts
         $TIMEOUT = 10; //Timeout in minutes after max errors is reached.
         // cambio de mail_fetchfreq*60
+        // ((mail_fetchfreq*60))-60)
         $sql=' SELECT email_id, mail_errors FROM '.EMAIL_TABLE
             .' WHERE mail_active=1 '
             .'  AND (mail_errors<='.$MAXERRORS.' OR (TIME_TO_SEC(TIMEDIFF(NOW(), mail_lasterror))>'.($TIMEOUT*60).') )'
-            .'  AND (mail_lastfetch IS NULL OR TIME_TO_SEC(TIMEDIFF(NOW(), mail_lastfetch))>mail_fetchfreq)'
+            .'  AND (mail_lastfetch IS NULL OR TIME_TO_SEC(TIMEDIFF(NOW(), mail_lastfetch))>(mail_fetchfreq*60)'
             .' ORDER BY mail_lastfetch ASC';
 
         if (!($res=db_query($sql)) || !db_num_rows($res))
